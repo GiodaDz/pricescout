@@ -2,45 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Privacy Policy – PricePal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PriceScout for Amazon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'DM Sans', sans-serif; background: #0f0d0a; color: #e8e2d8; max-width: 720px; margin: 0 auto; padding: 80px 24px; line-height: 1.7; }
-    h1 { font-family: 'Syne', sans-serif; font-size: 42px; color: #ff6b35; margin-bottom: 8px; }
-    .date { color: #8a8070; font-size: 13px; margin-bottom: 48px; }
-    h2 { font-family: 'Syne', sans-serif; font-size: 22px; margin: 36px 0 12px; }
-    p { color: #a09888; margin-bottom: 16px; font-weight: 300; }
-    a { color: #ff6b35; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #080C14;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+    nav {
+      padding: 18px 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a { text-decoration: none; color: #64748b; font-size: 14px; transition: color 0.2s; }
+    nav a:hover { color: #e2e8f0; }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px 100px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0,212,200,0.1);
+      border: 1px solid rgba(0,212,200,0.25);
+      color: #00D4C8;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #00D4C8, #1A56DB);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .date { color: #475569; font-size: 13px; margin-bottom: 48px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin: 36px 0 12px;
+      letter-spacing: -0.3px;
+    }
+    p { color: #94a3b8; font-size: 15px; line-height: 1.75; margin-bottom: 14px; font-weight: 300; }
+    strong { color: #e2e8f0; font-weight: 600; }
+    a { color: #00D4C8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { height: 1px; background: rgba(255,255,255,0.07); margin: 40px 0; }
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: #334155;
+      font-size: 12px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="date">Last updated: May 2026</p>
+  <nav>
+    <a href="index.html">← Back to PriceScout</a>
+    <a href="https://github.com/GiodaDz/pricescout/issues">Support</a>
+  </nav>
 
-  <h2>Overview</h2>
-  <p>PricePal is a Chrome extension that helps you track Amazon prices and find coupons. We take your privacy seriously — in fact, we've built the extension so that it requires no personal data from you at all.</p>
+  <div class="container">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: May 2026</p>
 
-  <h2>Data We Collect</h2>
-  <p><strong style="color:#e8e2d8">We collect no personal data.</strong> PricePal stores price history data locally on your device using Chrome's built-in storage API. This data never leaves your browser and is never transmitted to our servers.</p>
+    <h2>Overview</h2>
+    <p>PriceScout for Amazon is a Chrome extension that tracks price history and finds coupons on Amazon product pages. We've built it so that it requires no personal data from you whatsoever.</p>
 
-  <h2>What is stored locally</h2>
-  <p>PricePal stores the following data <em>only on your device</em>:</p>
-  <p>— Amazon product ASINs (product identifiers) you have visited<br/>— Historical price points for those products<br/>— Timestamps of price observations</p>
-  <p>This data is used solely to power the price history chart shown in the extension widget.</p>
+    <div class="divider"></div>
 
-  <h2>Affiliate Links</h2>
-  <p>PricePal includes Amazon affiliate links. When you click "View Best Price on Amazon" and make a purchase, we may earn a small commission at no extra cost to you. This is how we keep the extension free.</p>
+    <h2>Data We Collect</h2>
+    <p><strong>We collect no personal data.</strong> PriceScout stores price history data locally on your device using Chrome's built-in storage API. This data never leaves your browser and is never transmitted to any server.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>PricePal does not integrate with any analytics, tracking, or advertising services. We do not use Google Analytics, Facebook Pixel, or any similar tools.</p>
+    <h2>What is stored locally on your device</h2>
+    <p>PriceScout stores the following data <strong>only on your device</strong>:</p>
+    <p>— Amazon product ASINs (product identifiers) you have visited<br/>
+       — Historical price points for those products<br/>
+       — Timestamps of price observations</p>
+    <p>This data is used solely to power the price history chart and price drop notifications in the extension.</p>
 
-  <h2>Data Sharing</h2>
-  <p>We do not sell, share, or transmit any data to third parties. There is nothing to share — all data stays on your device.</p>
+    <h2>Affiliate Links</h2>
+    <p>PriceScout includes Amazon affiliate links (tag: pricescout04-20). When you click "Buy on Amazon" or "Compare sellers" and make a purchase, we may earn a small commission at no extra cost to you. This is how we keep the extension free.</p>
 
-  <h2>Permissions</h2>
-  <p>PricePal requests only the permissions it needs: access to Amazon domains (to read product prices), and local storage (to save price history). We do not request access to your browsing history, passwords, or any other sensitive data.</p>
+    <h2>Third-Party Services</h2>
+    <p>PriceScout does not integrate with any analytics, tracking, or advertising services. We do not use Google Analytics, Facebook Pixel, or any similar tools. The only external links are to Amazon and Keepa (for full price history), both opened explicitly by the user.</p>
 
-  <h2>Contact</h2>
-  <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:hello@pricepal.app">hello@pricepal.app</a>.</p>
+    <h2>Data Sharing</h2>
+    <p>We do not sell, share, or transmit any data to third parties. There is nothing to share — all data stays on your device.</p>
+
+    <h2>Permissions</h2>
+    <p>PriceScout requests only the permissions it needs:</p>
+    <p>— <strong>Amazon domains</strong> — to read product prices and display the widget<br/>
+       — <strong>Storage</strong> — to save price history locally on your device<br/>
+       — <strong>Notifications</strong> — to alert you when a tracked price drops<br/>
+       — <strong>Alarms</strong> — to schedule background price checks</p>
+    <p>We do not request access to your browsing history, passwords, or any other sensitive data.</p>
+
+    <h2>Price Drop Checks</h2>
+    <p>To check for price drops, PriceScout's background service fetches Amazon product pages directly. This is done without opening any tabs and only for products you have previously viewed. No data from these fetches is stored or transmitted — it is only compared against your locally stored price history.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make changes to this privacy policy, we will update the date at the top of this page. Continued use of the extension constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this privacy policy, please open an issue on our <a href="https://github.com/GiodaDz/pricescout/issues" target="_blank">GitHub page</a>.</p>
+  </div>
+
+  <footer>© 2026 PriceScout for Amazon. All rights reserved.</footer>
 </body>
 </html>
